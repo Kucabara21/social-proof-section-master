@@ -1,0 +1,107 @@
+@font-face{
+    font-family: spartan;
+    src: url("static/Spartan-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: spartan;
+    src: url("static/Spartan-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face{
+    font-family: spartan;
+    src: url("static/Spartan-Bold.ttf");
+    font-weight: 700;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: spartan;
+}
+
+.flexBox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 4rem 8rem;
+}
+
+.header{
+    flex-basis: 40%;
+    padding-left: 1rem;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+.header p{
+    font-size: small;
+    color: hsl(303, 10%, 53%);
+}
+.rating{
+    margin-left: 5rem;
+    padding-top: 2rem;
+}
+
+.rating .label{
+    padding: 0.7rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    width: 20rem;
+    background-color: hsl(300, 24%, 96%);
+}
+.label img{
+    width: 1rem;
+    vertical-align: middle;
+}
+.sec{
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+.third{
+    margin-top: 1rem;
+    margin-left: 6rem;
+}
+.desc{
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 1rem;
+}
+.review{
+    max-width: 24%;
+    font-size: small;
+    color: white;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    margin: 3rem 0.7rem 0.7rem 1rem;
+    padding: 1.5rem;
+    background-color: hsl(300, 43%, 22%);
+}
+
+.status{
+    color: hsl(333, 80%, 67%);
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.name{
+    flex-basis: 60%;
+    padding-top: 0.8rem;
+}
+.name p{
+    margin: 0;
+    margin-top: 0.25rem;
+}
+.profile img{
+    width: 2rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
