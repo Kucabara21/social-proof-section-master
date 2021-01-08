@@ -25,9 +25,10 @@ body{
 
 .flexBox{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    margin: 4rem 8rem;
+    margin: 4rem 1rem 3rem 0.2rem;
+    align-items: center;
 }
 
 .header{
@@ -44,7 +45,8 @@ h1{
     color: hsl(303, 10%, 53%);
 }
 .rating{
-    margin-left: 5rem;
+    flex-basis: 90%;
+    margin-left: 1rem;
     padding-top: 2rem;
 }
 
@@ -62,11 +64,10 @@ h1{
 }
 .sec{
     margin-top: 1rem;
-    margin-left: 3rem;
+
 }
 .third{
     margin-top: 1rem;
-    margin-left: 6rem;
 }
 .desc{
     vertical-align: middle;
@@ -74,7 +75,7 @@ h1{
     margin-left: 1rem;
 }
 .review{
-    max-width: 24%;
+    flex-basis: 100%;
     font-size: small;
     color: white;
     border: 1px solid black;
@@ -104,4 +105,46 @@ h1{
     width: 2rem;
     border-radius: 1rem;
     margin: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .flexBox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 4rem 8rem 3rem 8rem;
+        align-items: center;
+    }
+    .sec{
+        margin-top: 1rem;
+        margin-left: 3rem;
+    }
+    .third{
+        margin-top: 1rem;
+        margin-left: 6rem;
+    }
+    .rating{
+    flex-basis: auto;
+    margin-left: 5rem;
+    padding-top: 2rem;
+    }
+    .rating .label{
+        padding: 0.7rem;
+        font-size: 0.8rem;
+        font-weight: 700;
+        border-radius: 0.5rem;
+        width: 20rem;
+        background-color: hsl(300, 24%, 96%);
+    }
+    .review{
+        max-width: 24%;
+        font-size: small;
+        color: white;
+        border: 1px solid black;
+        border-radius: 0.5rem;
+        margin: 3rem 0.7rem 0.7rem 1rem;
+        padding: 1.5rem;
+        background-color: hsl(300, 43%, 22%);
+    }
+    
 }
