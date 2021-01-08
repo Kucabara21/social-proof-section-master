@@ -114,6 +114,10 @@ h1{
         flex-wrap: wrap;
         margin: 4rem 8rem 3rem 8rem;
         align-items: center;
+        justify-content: center;
+    }
+    .header{
+        flex-basis: 100%;
     }
     .sec{
         margin-top: 1rem;
@@ -124,9 +128,10 @@ h1{
         margin-left: 6rem;
     }
     .rating{
-    flex-basis: auto;
-    margin-left: 5rem;
-    padding-top: 2rem;
+        flex-basis: 100%;
+        margin-left: 5rem;
+        padding-top: 1rem;
+        padding-left: 7rem;
     }
     .rating .label{
         padding: 0.7rem;
@@ -147,4 +152,61 @@ h1{
         background-color: hsl(300, 43%, 22%);
     }
     
+}
+
+@media only screen and (min-width: 1024px){
+    .rating{
+        margin-right: 0;
+        align-items: center;
+        flex-basis: 70%;
+    }
+}
+@media only screen and (max-width: 1125px){
+    .header, .rating{
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .flexBox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 4rem 8rem 3rem 8rem;
+        align-items: center;
+    }
+    .header{
+        flex-basis: 40%;
+        padding-left: 1rem;
+    }
+    .sec{
+        margin-top: 1rem;
+        margin-left: 3rem;
+    }
+    .third{
+        margin-top: 1rem;
+        margin-left: 6rem;
+    }
+    .rating{
+    flex-basis: auto;
+    margin-left: 5rem;
+    padding-top: 1rem;
+    }
+    .rating .label{
+        padding: 0.7rem;
+        font-size: 0.8rem;
+        font-weight: 700;
+        border-radius: 0.5rem;
+        width: 20rem;
+        background-color: hsl(300, 24%, 96%);
+    }
+    .review{
+        max-width: 24%;
+        font-size: small;
+        color: white;
+        border: 1px solid black;
+        border-radius: 0.5rem;
+        margin: 3rem 0.7rem 0.7rem 1rem;
+        padding: 1.5rem;
+        background-color: hsl(300, 43%, 22%);
+    }
 }
