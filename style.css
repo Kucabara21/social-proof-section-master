@@ -26,13 +26,13 @@ body{
 .flexBox{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin: 4rem 1rem 3rem 0.2rem;
     align-items: center;
 }
 
 .header{
-    flex-basis: 40%;
+    flex-basis: 100%;
     padding-left: 1rem;
 }
 h1{
@@ -45,7 +45,7 @@ h1{
     color: hsl(303, 10%, 53%);
 }
 .rating{
-    flex-basis: 90%;
+    flex-basis: 100%;
     margin-left: 1rem;
     padding-top: 2rem;
 }
@@ -129,9 +129,8 @@ h1{
     }
     .rating{
         flex-basis: 100%;
-        margin-left: 5rem;
+        margin-left: 3rem;
         padding-top: 1rem;
-        padding-left: 7rem;
     }
     .rating .label{
         padding: 0.7rem;
@@ -161,10 +160,8 @@ h1{
         flex-basis: 70%;
     }
 }
-@media only screen and (max-width: 1125px){
-    .header, .rating{
-        margin: auto;
-    }
+@media only screen and (min-width: 1125px){
+    
 }
 @media only screen and (min-width: 1200px){
     .flexBox{
