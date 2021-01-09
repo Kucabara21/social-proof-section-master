@@ -110,7 +110,7 @@ h1{
 
 @media only screen and (min-width: 768px) {
     body{
-        background-position: 0 0, 90% 230%;
+        background-position: 0 0, 140% 150%;
         background-repeat: no-repeat;
     }
     .flexBox{
